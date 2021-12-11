@@ -1,10 +1,10 @@
 const taskForm = document.querySelector("#task-form");
 
-taskForm.addEventListener("submit", (e) => {
+taskForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   const title = taskForm["title"].value;
   const description = taskForm["description"].value;
-  App.createTask(title, description);
+  await App.createTask(title, description);
 });
 
 async function toggleStatus(num) {
