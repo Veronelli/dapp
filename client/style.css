@@ -1,0 +1,6 @@
+.bg-dark-p{
+    background-color: rgb(31, 31, 31);
+}
+.bg-dark-p:focus{
+    background: rgb(29, 29, 29);
+}
